@@ -16,7 +16,13 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.husahin.rapidrideapp",
+      "config": {
+        "googleMaps": {
+          "apiKey": "$EXPO_PUBLIC_GOOGLE_API_KEY"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
@@ -42,6 +48,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": "https://myserverurl.com/"
+      },
+      "eas": {
+        "projectId": "7d7dbd1a-d32d-4021-b256-9296b24fad4f"
+      }
+    },
+    "owner": "hahusahin"
   }
 }
